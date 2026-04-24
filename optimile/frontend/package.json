@@ -1,0 +1,15 @@
+{
+  "name": "optimile-frontend-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "admin-portal",
+    "shared-vendor",
+    "shared-customer"
+  ],
+  "scripts": {
+    "dev:admin": "npm run dev -w admin-portal",
+    "build:admin": "npm run build -w admin-portal",
+    "lint:admin": "npm run lint -w admin-portal"
+  }
+}
