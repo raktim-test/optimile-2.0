@@ -4,12 +4,21 @@
   "version": "0.1.0",
   "workspaces": [
     "admin-portal",
+    "customer-dashboard",
+    "optimile-portal",
+    "vendor-portal",
+    "vendor-app",
+    "customer-app",
+    "driver-app",
     "shared-vendor",
     "shared-customer"
   ],
   "scripts": {
     "dev:admin": "npm run dev -w admin-portal",
-    "build:admin": "npm run build -w admin-portal",
-    "lint:admin": "npm run lint -w admin-portal"
+    "dev:customer-dashboard": "npm run dev -w customer-dashboard",
+    "dev:optimile-portal": "npm run dev -w optimile-portal",
+    "dev:vendor-portal": "npm run dev -w vendor-portal",
+    "lint:web": "npm run lint -w admin-portal && npm run lint -w customer-dashboard && npm run lint -w optimile-portal && npm run lint -w vendor-portal",
+    "build:web": "npm run build -w admin-portal && npm run build -w customer-dashboard && npm run build -w optimile-portal && npm run build -w vendor-portal"
   }
 }
